@@ -17,9 +17,14 @@
   background: transparent;
 }
 
+.portfolio__item:hover > .portfolio__item-image {
+  transform: scale(1.05);
+}
+
 .portfolio__item-image {
   border-radius: 1rem;
   overflow: hidden;
+  transition: var(--transition);
 }
 
 .portfolio__item h3 {
