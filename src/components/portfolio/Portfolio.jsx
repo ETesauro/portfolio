@@ -1,10 +1,10 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/wf.png'
-import IMG2 from '../../assets/wf.png'
-import IMG3 from '../../assets/wf.png'
-import IMG4 from '../../assets/wf.png'
-import IMG5 from '../../assets/wf.png'
+import IMG1 from '../../assets/wf.jpeg'
+import IMG2 from '../../assets/wf.jpeg'
+import IMG3 from '../../assets/wf.jpeg'
+import IMG4 from '../../assets/wf.jpeg'
+import IMG5 from '../../assets/wf.jpeg'
 
 const data = [
   {

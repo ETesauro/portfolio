@@ -2,11 +2,11 @@ import React from 'react'
 import CTA from './CTA'
 import './header.css'
 import HeaderSocials from './HeaderSocials'
-import ME from '../../assets/wf.png'
-/*import { Suspense } from 'react'
+import ME from '../../assets/wf.jpeg'
+import { Suspense } from 'react'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import FallGuys from './FallGuys' */
+import Guy from './Guy'
 
 const Header = () => {
   return (
@@ -17,17 +17,19 @@ const Header = () => {
         <h5 className='text-light'>Fullstack Developer</h5>
         <CTA />
 
-        {/* <Canvas>
-          <OrbitControls enableZoom={false} />
-          <ambientLight intensity={0.5} />
-          <Suspense fallback={null}>
-            <FallGuys />
-          </Suspense>
-        </Canvas> */}
+        <div className='me'>
+          <Canvas>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={0.2} />
+            <Suspense fallback={null}>
+              <Guy />
+            </Suspense>
+          </Canvas>
+        </div>
 
         <HeaderSocials />
 
-        <div className='me'>{<img src={ME} alt='' />}</div>
+        {/* <div className='me'>{<img src={ME} alt='' />}</div> */}
 
         <a href='#contact' className='scroll__down'>
           Scroll Down
